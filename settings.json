@@ -1,0 +1,95 @@
+{
+    "go.useLanguageServer": false,
+    "[go]": {
+        "editor.formatOnSave": false,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+        },
+        // Optional: Disable snippets, as they conflict with completion ranking.
+        "editor.snippetSuggestions": "none",
+    },
+    "[go.mod]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+        },
+    },
+    "gopls": {
+        // Add parameter placeholders when completing a function.
+        "usePlaceholders": true,
+        // If true, enable additional analyses with staticcheck.
+        // Warning: This will significantly increase memory usage.
+        "staticcheck": false,
+        "build.experimentalWorkspaceModule": true,
+        "build.expandWorkspaceToModule": true,
+        "build.allowModfileModifications": true,
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.tslint": true,
+        "source.fixAll": true
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "files.eol": "\n",
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "files.exclude": {
+        "**/*.meta": true,
+        "thirdpart": true
+    },
+    "remote.localPortHost": "allInterfaces",
+    "remote.SSH.remotePlatform": {
+        "192.168.1.101": "windows",
+        "manager": "linux",
+        "conn": "linux",
+        "18.141.225.252": "linux",
+        "jack": "linux"
+    },
+    "rest-client.previewOption": "exchange",
+    "rest-client.environmentVariables": {
+        "$shared": {
+            "version": "v1",
+            "prodToken": "foo",
+            "nonProdToken": "bar"
+        },
+        "local": {
+            "version": "v2",
+            "host": "localhost",
+            "token": "{{$shared nonProdToken}}",
+            "secretKey": "devSecret"
+        },
+        "production": {
+            "host": "example.com",
+            "token": "{{$shared prodToken}}",
+            "secretKey": "prodSecret"
+        }
+    },
+    "git.confirmSync": false,
+    "workbench.editor.enablePreview": false,
+    "terminal.integrated.defaultProfile.windows": "bash",
+    "terminal.integrated.profiles.windows": {
+        "bash": {
+            "path": "D:/Program Files/Git/bin/bash.exe",
+            "args": [
+                "-l"
+            ],
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh",
+            "args": [
+                "-l"
+            ]
+        }
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/.hg/store/**": true,
+        "thirdpart": true
+    },
+    "terminal.external.windowsExec": "D:\\Program Files\\Git\\bin\\bash.exe",
+    "terminal.explorerKind": "external"
+}

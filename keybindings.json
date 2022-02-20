@@ -1,0 +1,115 @@
+[
+    {
+        "key": "alt+shift+f", //ctrl+shift+f
+        "command": "workbench.view.search"
+    },
+    {
+        "key": "ctrl+shift+f", //shift+alt+f
+        "command": "editor.action.format",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "crl+shift+f", //shift+alt+f
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+h", //ctrl+shift+h
+        "command": "workbench.action.replaceInFiles"
+    },
+    {
+        "key": "ctrl+shift+k", //ctrl+d
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+d", //ctrl+shift+k
+        "command": "editor.action.deleteLines",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+ctrl+/", //shift+alt+a
+        "command": "editor.action.blockComment",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+j", //f12
+        "command": "editor.action.goToDeclaration",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+/", //ctrl+shift+space
+        "command": "editor.action.triggerParameterHints",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+i", //自己添加
+        "command": "workbench.action.toggleDevTools"
+    },
+    {
+        "key": "ctrl+v", //ctrl+shift+v
+        "command": "workbench.action.terminal.paste",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+left", //ctrl+-
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "alt+right", //ctrl+shift+-
+        "command": "workbench.action.navigateForward"
+    },
+    // {
+    //     "key": "ctrl+c", //ctrl+shift+c
+    //     "command": "workbench.action.terminal.copySelection",
+    //     "when": "terminalFocus"
+    // },
+    // default 
+    {
+        "key": "ctrl+shift+\\", //跳转到另一个括号
+        "command": "editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+y", //调试控制台
+        "command": "workbench.debug.action.toggleRepl"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "f1", //f1
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "shift+ctrl+p", //shift+ctrl+p
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "ctrl+j", //togglePanel
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+[Backquote]",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+shift+[Backquote]",
+        "command": "workbench.action.terminal.new"
+    },
+    {
+        "key": "shift+f12",
+        "command": "editor.action.referenceSearch.trigger",
+        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+    {
+        "key": "alt+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+ctrl+i",
+        "command": "editor.action.insertSnippet"
+    }
+]
